@@ -4,3 +4,11 @@
 
 <br>
 
+<div id="prestations">
+  <% @prestations.each do |prestation| %>
+    <%= render prestation %>
+    <p>
+      <%= link_to "Show this prestation", prestation %>
+    </p>
+  <% end %>
+</div>

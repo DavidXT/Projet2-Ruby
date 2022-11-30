@@ -1,5 +1,6 @@
 class PrestationsController < ApplicationController
   before_action :set_prestation, only: %i[ show edit update destroy ]
+  before_action :set_clients, only: %i[ create new update edit ]
 
   # GET /prestations or /prestations.json
   def index
@@ -26,7 +27,7 @@ class PrestationsController < ApplicationController
 
     respond_to do |format|
       if @prestation.save
-        format.html { redirect_to prestation_url(@prestation), notice: "Prestation was successfully created." }
+        format.html { redirect_to "/prestations/new", notice: "Prestation was successfully created." }
         format.json { render :show, status: :created, location: @prestation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +40,7 @@ class PrestationsController < ApplicationController
   def update
     respond_to do |format|
       if @prestation.update(prestation_params)
-        format.html { redirect_to prestation_url(@prestation), notice: "Prestation was successfully updated." }
+        format.html { redirect_to "/prestations/new", notice: "Prestation was successfully updated." }
         format.json { render :show, status: :ok, location: @prestation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,7 +54,7 @@ class PrestationsController < ApplicationController
     @prestation.destroy
 
     respond_to do |format|
-      format.html { redirect_to prestations_url, notice: "Prestation was successfully destroyed." }
+      format.html { redirect_to "/prestations/new", notice: "Prestation was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -67,5 +68,10 @@ class PrestationsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def prestation_params
       params.require(:prestation).permit(:ClientName, :Date, :Description)
+    end
+
+    def set_clients
+      clients = Client.all
+      @client_name = clients.map{|e|e.Name}
     end
 end

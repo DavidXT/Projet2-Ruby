@@ -1,17 +1,20 @@
 <div id="<%= dom_id prestation %>">
-  <p>
-    <strong>Clientname:</strong>
-    <%= prestation.ClientName %>
-  </p>
+  <div class="row">
+    <div class="col-2">
+      <strong>Clientname:</strong>
+      <%= prestation.ClientName %>
 
-  <p>
-    <strong>Date:</strong>
-    <%= prestation.Date %>
-  </p>
+      <p>
+        <strong>Date:</strong>
+        <%= prestation.Date %>
+      </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= prestation.Description %>
-  </p>
+    </div>
 
+    <div class="col-10">
+        <strong>Description:</strong>
+        <%= prestation.Description %>
+    </div>
+
+  </div>
 </div>

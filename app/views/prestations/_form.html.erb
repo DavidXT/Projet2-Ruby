@@ -11,9 +11,9 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="field">
     <%= form.label :ClientName, style: "display: block" %>
-    <%= form.text_field :ClientName %>
+    <%= form.select :ClientName, @client_name, include_blank: true %>
   </div>
 
   <div>
