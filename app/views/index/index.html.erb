@@ -1,41 +1,16 @@
-<p style="color: green"><%= notice %></p>
-
-<p></p><p></p>
-
-<h1>My Clients</h1>
-<div id="games">
-  <%i = 0 %>
-  <div class="row">
-    <% @clients.each do |client| %>
-    <div class="col-sm">
-    <%= render client %>
-      <%= link_to "Show this game", client %>
-    </div>
-    <%i = i + 1 %>
-      <% if(i == 3) %>
-      <% i = 0 %>>
-        <div class="w-100"></div>
-      <% end %>
-    <% end %>
-  </div>
+<div id="homeHead">
+  <p style="color:white" class="px-xl-5 pt-xxl-5">
+    Ruby on rails : CRM
+  </p>
+  <p style="color:white ; font-size: 18px;" class="px-xl-5">
+    David Nguyen / Leo Chabert
+  </p>
 </div>
 
-<p></p><p></p>
-
-<h1>My Prestations</h1>
-<div id="games">
-  <%i = 0 %>
-  <div class="row">
-    <% @prestations.each do |prestation| %>
-      <div class="col-sm">
-        <%= render prestation %>
-        <%= link_to "Show this game", prestation %>
-      </div>
-      <%i = i + 1 %>
-      <% if(i == 3) %>
-        <% i = 0 %>>
-        <div class="w-100"></div>
-      <% end %>
-    <% end %>
-  </div>
+<div class="MainContent px-xl-5 pt-xxl-5" >
+  <h1>About us :</h1>
+  <p>
+      We propose a solution to save your clients base and provided services history.
+  </p>
 </div>
+
