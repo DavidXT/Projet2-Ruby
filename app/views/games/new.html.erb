@@ -5,5 +5,14 @@
 <br>
 
 <div>
-  <%= link_to "Back to games", games_path %>
+  <%= link_to "Back to games", "/index#index" %>
+</div>
+
+<div id="games">
+  <% @games.each do |game| %>
+    <%= render game %>
+    <p>
+      <%= link_to "Show this game", game %>
+    </p>
+  <% end %>
 </div>

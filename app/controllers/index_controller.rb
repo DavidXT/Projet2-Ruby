@@ -1,5 +1,6 @@
 class IndexController < ApplicationController
   def index
-    @games = Game.all
+    @clients = Client.all
+    @prestations = Prestation.all
   end
 end

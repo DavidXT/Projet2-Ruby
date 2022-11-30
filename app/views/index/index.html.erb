@@ -1,16 +1,15 @@
 <p style="color: green"><%= notice %></p>
-<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/steamworks_docs/french/Header_1.jpg" class="img-fluid" alt="Normalement y'a une image ici">
 
 <p></p><p></p>
 
-<h1>What's hot</h1>
+<h1>My Clients</h1>
 <div id="games">
   <%i = 0 %>
   <div class="row">
-    <% @games.each do |game| %>
+    <% @clients.each do |client| %>
     <div class="col-sm">
-    <%= render game %>
-      <%= link_to "Show this game", game %>
+    <%= render client %>
+      <%= link_to "Show this game", client %>
     </div>
     <%i = i + 1 %>
       <% if(i == 3) %>
@@ -23,34 +22,14 @@
 
 <p></p><p></p>
 
-<h1>New Games</h1>
+<h1>My Prestations</h1>
 <div id="games">
   <%i = 0 %>
   <div class="row">
-    <% @games.each do |game| %>
+    <% @prestations.each do |prestation| %>
       <div class="col-sm">
-        <%= render game %>
-        <%= link_to "Show this game", game %>
-      </div>
-      <%i = i + 1 %>
-      <% if(i == 3) %>
-        <% i = 0 %>>
-        <div class="w-100"></div>
-      <% end %>
-    <% end %>
-  </div>
-</div>
-
-<p></p><p></p>
-
-<h1>Cheap</h1>
-<div id="games">
-  <%i = 0 %>
-  <div class="row">
-    <% @games.each do |game| %>
-      <div class="col-sm">
-        <%= render game %>
-        <%= link_to "Show this game", game %>
+        <%= render prestation %>
+        <%= link_to "Show this game", prestation %>
       </div>
       <%i = i + 1 %>
       <% if(i == 3) %>
