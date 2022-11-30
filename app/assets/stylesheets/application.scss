@@ -67,6 +67,11 @@ body{
   margin-right: $horizontal-margin;
   margin-bottom: $horizontal-margin;
 
+  $horizontal-padding : 3%;
+  padding-right: $horizontal-padding;
+  padding-left: $horizontal-padding;
+  padding-top: $horizontal-padding;
+
   height: 100%;
 
   background-color: white;

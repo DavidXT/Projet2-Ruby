@@ -1,14 +1,17 @@
-<h1>New prestation</h1>
+<div class="MainContent">
+  <h1>New prestation</h1>
 
-<%= render "form", prestation: @prestation %>
+  <%= render "form", prestation: @prestation %>
 
-<br>
+  <br>
 
-<div id="prestations">
-  <% @prestations.each do |prestation| %>
-    <%= render prestation %>
-    <p>
-      <%= link_to "Show this prestation", prestation %>
-    </p>
-  <% end %>
+  <div id="prestations">
+    <% @prestations.each do |prestation| %>
+      <%= render prestation %>
+      <p>
+        <%= link_to "Show this prestation", prestation %>
+      </p>
+    <% end %>
+  </div>
 </div>
+
