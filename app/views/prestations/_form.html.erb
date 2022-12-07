@@ -10,26 +10,27 @@
       </ul>
     </div>
   <% end %>
-<div style="background: #D8D8D8; padding:10px">
-  <div class="field">
-    <%= form.label :ClientName, style: "display: block;" %>
-    <%= form.select :ClientName, @client_name, include_blank: true %>
+
+  <div class="row">
+    <div class="col-sm">
+      <%= form.label :"Client Name", style: "display: block; margin-top:1%", class:"NewPrestationLabel" %>
+      <%= form.select :ClientName, @client_name,  style:"width: 25%", include_blank: true %>
+      <%= link_to "+ Add Client", "/clients/new" %>
+    </div>
+
+    <div class="col-sm", class="float-right">
+      <%= form.label :Date, style: "display: block; margin-top:1%", class:"NewPrestationLabel"%>
+      <%= form.date_field :Date,class:"NewPrestationDate"%>
+    </div>
   </div>
-  <%= link_to "+ Add Client", "/clients/new" %>
+  <div>
+    <%= form.label :Description, style: "display: block; margin-top:1%", class:"NewPrestationLabel" %>
+    <%= form.text_field :Description, class:"NewPrestationDescription"%>
+  </div>
 
   <div>
-    <%= form.label :Date, style: "display: block"%>
-    <%= form.date_field :Date  %>
+    <%= form.submit :Save, style:"background-color: none; margin-top:1%", class:"btn btn-primary" %>
   </div>
 
-  <div>
-    <%= form.label :Description, style: "display: block" %>
-    <%= form.text_field :Description, style:"width: 75%; height: 75px" %>
-  </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-
-</div>
 <% end %>

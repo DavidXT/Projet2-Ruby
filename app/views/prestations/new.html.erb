@@ -1,10 +1,14 @@
 <div class="MainContent">
-  <h1>New prestation</h1>
+
+  <h1 style="text-align: center">Services :</h1>
+
+  <div style="background: #D8D8D8; padding:10px">
+  <h1>New service</h1>
 
   <%= render "form", prestation: @prestation %>
-
+  </div>
   <br>
-  <h1>Pestation history</h1>
+  <h1>Service history</h1>
 
   <div id="prestations">
     <% @prestations.each do |prestation| %>
