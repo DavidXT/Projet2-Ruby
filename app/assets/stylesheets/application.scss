@@ -205,3 +205,12 @@ body{
   color : white;
   text-align: left;
 }
+
+.easterEgg
+{
+  align-content: center;
+
+  $vertical-margin : 12%;
+  margin-top: $vertical-margin;
+  margin-bottom: 1%;
+}
