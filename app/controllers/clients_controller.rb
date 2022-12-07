@@ -64,6 +64,10 @@ class ClientsController < ApplicationController
       @client = Client.find(params[:id])
     end
 
+    def get_prestation
+      @prestation = Prestation.find(params[:id])
+    end
+
     # Only allow a list of trusted parameters through.
     def client_params
       params.require(:client).permit(:Name, :Email, :PhoneNumber, :Description)
