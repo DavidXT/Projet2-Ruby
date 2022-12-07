@@ -3,7 +3,7 @@
 </div>
 
 <div class="MainContent">
-  <h1>Editing prestation</h1>
+  <h1>Editing service</h1>
 
   <%= render "form", prestation: @prestation %>
 
@@ -11,6 +11,8 @@
 
   <div>
     <%= link_to "Back to services", "/prestations/new" %>
-    <%= button_to "Destroy this service", @prestation, method: :delete %>
+    <div class="d-flex flex-col justify-content-end align-items-end">
+      <%= button_to "Destroy this service", @prestation, method: :delete, class: "btn btn-light"%>
+    </div>
   </div>
 </div>
