@@ -15,7 +15,7 @@
     <% @clients.each do |client| %>
       <%= render client %>
       <p>
-        <%= link_to "Show this client", client %>
+        <%= link_to "Edit this client", edit_client_path(client) %>
       </p>
     <% end %>
   </div>
