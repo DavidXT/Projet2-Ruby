@@ -77,6 +77,19 @@ body{
   background-color: white;
 }
 
+.EditClientPanel
+{
+  $horizontal-padding : 3%;
+  $vertical-padding : 3%;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+
+  background-color: #8729FF;
+  color: #FFFFFF;
+}
+
 .NewClientPanel
 {
   $horizontal-padding : 3%;
