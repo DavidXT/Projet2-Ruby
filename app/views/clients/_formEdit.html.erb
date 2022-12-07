@@ -12,26 +12,26 @@
   <% end %>
 
   <div>
-    <%= form.label :"Name :", style: "display: block", class:"NewClientContent" %>
+    <%= form.label :"Name :", style: "display: block", class:"EditClientContent" %>
     <%= form.text_field :Name %>
   </div>
 
   <div>
-    <%= form.label :"Email :", style: "display: block", class:"NewClientContent" %>
+    <%= form.label :"Email :", style: "display: block", class:"EditClientContent" %>
     <%= form.text_field :Email %>
   </div>
 
   <div>
-    <%= form.label :"Phone Number :", style: "display: block", class:"NewClientContent"%>
+    <%= form.label :"Phone Number :", style: "display: block", class:"EditClientContent"%>
     <%= form.number_field :PhoneNumber %>
   </div>
 
   <div>
-    <%= form.label :"Description :", style: "display: block", class:"NewClientContent" %>
+    <%= form.label :"Description :", style: "display: block", class:"EditClientContent" %>
     <%= form.text_field :Description %>
   </div>
 
   <div>
-    <%= form.submit :Save, style:"background-color: none", class:"btn btn-primary ButtonValidate"  %>
+    <%= form.submit :Save, style:"", class:"btn btn btn-light EditClientButton"%>
   </div>
 <% end %>

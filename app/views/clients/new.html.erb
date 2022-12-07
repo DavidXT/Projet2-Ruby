@@ -5,7 +5,7 @@
 
   <div class="NewClientPanel">
     <h2 style="color: white">New client</h2>
-    <%= render "form", client: @client %>
+    <%= render "formNew", client: @client %>
   </div>
 
 
@@ -13,10 +13,12 @@
   <h3 style="margin-bottom: 2%">Registered Client :</h3>
   <div id="clients">
     <% @clients.each do |client| %>
-      <%= render client %>
-      <p>
-        <%= link_to "Edit this client", edit_client_path(client) %>
-      </p>
+      <div class="ClientDisplay" >
+        <%= render client %>
+        <p>
+          <%= link_to "Edit this client", edit_client_path(client) %>
+        </p>
+      </div>
     <% end %>
   </div>
 </div>
