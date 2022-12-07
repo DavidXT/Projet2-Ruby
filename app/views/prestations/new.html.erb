@@ -16,10 +16,12 @@
 
   <div id="prestations">
     <% @prestations.each do |prestation| %>
+      <div class="ClientDisplay" >
       <%= render prestation %>
       <p>
         <%= link_to "Edit this service", edit_prestation_path(prestation) %>
       </p>
+      </div>
     <% end %>
   </div>
   <br><br>
