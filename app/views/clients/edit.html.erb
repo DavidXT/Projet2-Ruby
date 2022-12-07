@@ -25,5 +25,22 @@
   <div>
     <%= link_to "Back to clients", new_client_path %>
   </div>
+
+
+  <br>
+  <h2>Service history :</h2>
+
+  <div id="prestations">
+    <% @prestations.each do |prestation| %>
+      <% if prestation.ClientName == @client.Name %>
+        <%= render prestation %>
+        <p>
+          <%= link_to "Edit this prestation", edit_prestation_path(prestation) %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  <br><br>
+
 </div>
 
