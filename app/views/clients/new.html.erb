@@ -1,10 +1,16 @@
 <div class="MainContent">
-  <h1>New client</h1>
 
-  <%= render "form", client: @client %>
+
+  <h1 style="text-align: center">Client :</h1>
+
+  <div class="NewClientPanel">
+    <h2 style="color: white">New client</h2>
+    <%= render "form", client: @client %>
+  </div>
+
 
   <br>
-
+  <h3 style="margin-bottom: 2%">Registered Client :</h3>
   <div id="clients">
     <% @clients.each do |client| %>
       <%= render client %>

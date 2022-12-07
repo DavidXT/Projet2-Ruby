@@ -76,3 +76,40 @@ body{
 
   background-color: white;
 }
+
+.NewClientPanel
+{
+  $horizontal-padding : 3%;
+  $vertical-padding : 3%;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+
+  background-color: black;
+}
+
+.NewClientContent
+{
+  $vertical-margin : 1%;
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ButtonValidate
+{
+  $vertical-margin : 2%;
+  margin-top: $vertical-margin;
+
+  background-color: #8729FF;
+  border-color: #8729FF;
+
+}
+
+.ButtonValidate:hover, .ButtonValidate:focus, .ButtonValidate:active, .ButtonValidate.active, .open>.dropdown-toggle.ButtonValidate  .ButtonValidate:active:focus{
+
+  background-color: #6116cd;
+  border-color: #8729FF;
+}
