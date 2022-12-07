@@ -172,3 +172,36 @@ body{
 
   background-color: #f3f3f3;
 }
+
+.ConnectField
+{
+  $vertical-margin : 3%;
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+
+  $vertical-padding : 3%;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+
+  background-color: black;
+  color : white;
+  text-align: center;
+}
+
+.WelcomeBanner
+{
+  $vertical-margin : 0%;
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+
+  $vertical-padding : 1.5%;
+  $horizontal-padding : 5%;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+
+  background-color: #8729FF;
+  color : white;
+  text-align: left;
+}
