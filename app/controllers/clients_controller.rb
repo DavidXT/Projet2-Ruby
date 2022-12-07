@@ -18,6 +18,7 @@ class ClientsController < ApplicationController
 
   # GET /clients/1/edit
   def edit
+    @prestations = Prestation.all
   end
 
   # POST /clients or /clients.json
